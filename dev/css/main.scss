@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,800&display=swap');
+
+$white: #fff;
+$dark: #07222f;
+$grayBorder: #2a2d2f;
+$bluePrimary: #485258;
+$blueSecondary: #36a2f4;
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: $white;
+}
+
+h1 {
+    font-size: 50px !important;
+    font-weight: 800 !important;
+
+    @media screen and (max-width: 575px) {
+        font-size: 40px !important;
+    }
+}
+
+header {
+    height: 970px;
+    background-image: url('../img/Shape1.png');
+    background-position: 35% 100%;
+
+    nav {
+
+        .logo {
+            text-decoration: none;
+            line-height: 40px;
+        
+            &__placeholder {
+                color: $white;
+                font-size: 30px;
+                font-weight: 800;
+            }
+        }
+
+        ul {
+            list-style: none;
+            line-height: 40px;
+            margin: 0;
+
+            li {
+                cursor: pointer;
+                font-size: 15px;
+                color: $dark;
+            }
+        }
+    }
+}
+
+section#home-001 {
+    margin-top: 11rem;
+
+    h1 {
+        color: $white;
+    }
+
+    p {
+        font-size: 15px;
+        color: $white;
+    }
+
+    .image-placeholder-big {
+        width: 100%;
+        height: 663px;
+        background-color: #4194fc;
+
+        @media screen and (max-width: 991px) {
+            height: 400px;
+        }
+
+        @media screen and (max-width: 575px) {
+            height: 250px;
+        }
+    }
+}
+
+section#home-002 {
+    padding-bottom: 12rem;
+    position: relative;
+
+    @media screen and (max-width: 767px) {
+        margin-top: 15rem !important;
+    }
+
+    @media screen and (max-width: 575px) {
+        padding-bottom: 0rem;
+    }
+
+    &:after {
+        content: "";
+        background: url('../img/GradientOverlay.png');
+        background-repeat: no-repeat;
+        opacity: .1;
+        top: -40rem;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+        background-position: 5% 50%; 
+    }
+
+    h2 {
+        font-size: 36px;
+        font-weight: 800;
+        color: $dark;
+    }
+
+    p {
+        font-size: 18px;
+        color: $dark;
+        opacity: 0.6;
+    }
+}
+
+section#home-003 {
+
+    h2 {
+        font-size: 36px;
+        font-weight: 800;
+        color: $dark;
+    }
+
+    p {
+        font-size: 15px;
+        color: $dark;
+        opacity: .6;
+    }
+
+    .image-placeholder-container-first {
+        position: absolute;
+        top: -2rem;
+        left: 0;
+        width: 575px;
+        height: 590px;
+        background-image: url('../img/bg.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        @media screen and (max-width: 1199px) {
+            width: 100%;
+        }
+    }
+
+    .image-placeholder-container-second {
+        position: absolute;
+        top: -2rem;
+        left: -5rem;
+        width: 685px;
+        height: 554px;
+        background-image: url('../img/bg2.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        @media screen and (max-width: 1199px) {
+            width: 100%;
+        }
+    }
+
+    .image-placeholder {
+        height: 396px;
+        width: 100%;
+        background-color: #4194fc;
+
+        @media screen and (max-width: 575px) {
+            height: 200px;
+        }
+    }
+}
+
+a.border-button {
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    border: solid 2px rgba(42, 45, 47, .1);
+
+    @media screen and (max-width: 991px) {
+        padding: 10px 20px;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 5px 10px;
+    }
+
+    span {
+        font-weight: bold;
+        background: linear-gradient(to right, #4194fc, #0bded3);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+a.filled-button {
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    background-image: linear-gradient(to right, #4194fc, #0bded3);
+    color: $white !important;
+    font-weight: bold;
+
+    @media screen and (max-width: 991px) {
+        padding: 10px 20px;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 5px 10px;
+    }
+}
+
+a.cta-button {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    background-color: $white;
+    color: $blueSecondary !important;
+    font-weight: bold;
+}
+
+.features-container {
+    margin-top: 6rem;
+}
+
+.feature {
+    h4 {
+        font-size: 18px;
+        font-weight: bold;
+        color: $dark;
+    }
+
+    p {
+        font-size: 15px !important;
+        color: $dark;
+        opacity: 0.6;
+    }
+}
+
+.feature-image-container {
+    width: 160px;
+    height: 160px;
+    background-color: rgba(65, 149, 252, .05);
+    border-radius: 50%;
+    position: relative;
+
+    .feature-image {
+        width: 80px;
+        height: 80px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 25%;
+        left: 25%;
+    
+        &.booking {
+            background-image: url('../img/lesson-2.png');
+            
+            @media
+            only screen and (min-device-pixel-ratio: 2),
+            only screen and (min-resolution: 192dpi),
+            only screen and (min-resolution: 2dppx) {
+                background-image: url('../img/lesson-2@2x.png');
+            }
+        }
+    
+        &.chatting {
+            background-image: url('../img/conversation-2.png');
+            
+            @media
+            only screen and (min-device-pixel-ratio: 2),
+            only screen and (min-resolution: 192dpi),
+            only screen and (min-resolution: 2dppx) {
+                background-image: url('../img/conversation-2@2x.png');
+            }
+        }
+    
+        &.payment {
+            background-image: url('../img/payment-2.png');
+            
+            @media
+            only screen and (min-device-pixel-ratio: 2),
+            only screen and (min-resolution: 192dpi),
+            only screen and (min-resolution: 2dppx) {
+                background-image: url('../img/payment-2@2x.png');
+            }
+        }
+    }
+}
+
+.mt-10 {
+    margin-top: 10rem;
+}
