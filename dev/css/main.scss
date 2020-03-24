@@ -12,40 +12,44 @@ body {
 }
 
 h1 {
-    font-size: 50px !important;
-    font-weight: 800 !important;
+    font-size: 3.125rem;
+    font-weight: 800;
 
     @media screen and (max-width: 575px) {
-        font-size: 40px !important;
+        font-size: 2.5rem;
     }
 }
 
 header {
-    height: 970px;
+    height: 60.63rem;
     background-image: url('../img/Shape1.png');
     background-position: 35% 100%;
+
+    @media screen and (max-width: 575px) {
+        background-position: 30% 100%;
+    }
 
     nav {
 
         .logo {
             text-decoration: none;
-            line-height: 40px;
+            line-height: 2.5rem;
         
             &__placeholder {
                 color: $white;
-                font-size: 30px;
+                font-size: 1.875rem;
                 font-weight: 800;
             }
         }
 
         ul {
             list-style: none;
-            line-height: 40px;
+            line-height: 2.5rem;
             margin: 0;
 
             li {
                 cursor: pointer;
-                font-size: 15px;
+                font-size: 0.9375rem;
                 color: $dark;
             }
         }
@@ -54,27 +58,28 @@ header {
 
 section#home-001 {
     margin-top: 11rem;
+    color: $blueSecondary;
 
     h1 {
         color: $white;
     }
 
     p {
-        font-size: 15px;
+        font-size: 0.9375rem;
         color: $white;
     }
 
     .image-placeholder-big {
         width: 100%;
-        height: 663px;
+        height: 41.44rem;
         background-color: #4194fc;
 
         @media screen and (max-width: 991px) {
-            height: 400px;
+            height: 25rem;
         }
 
         @media screen and (max-width: 575px) {
-            height: 250px;
+            height: 15.63rem;
         }
     }
 }
@@ -84,11 +89,11 @@ section#home-002 {
     position: relative;
 
     @media screen and (max-width: 767px) {
-        margin-top: 15rem !important;
+        margin-top: 15rem;
     }
 
     @media screen and (max-width: 575px) {
-        padding-bottom: 0rem;
+        padding-bottom: 10rem;
     }
 
     &:after {
@@ -103,31 +108,49 @@ section#home-002 {
         position: absolute;
         z-index: -1;
         background-position: 5% 50%; 
+
+        @media screen and (max-width: 575px) {
+            top: 3rem;
+        }
     }
 
     h2 {
-        font-size: 36px;
+        font-size: 2.25rem;
         font-weight: 800;
         color: $dark;
     }
 
     p {
-        font-size: 18px;
+        font-size: 1.125rem;
         color: $dark;
         opacity: 0.6;
+    }
+
+    .feature {
+        h4 {
+            font-size: 1.125rem;
+            font-weight: bold;
+            color: $dark;
+        }
+    
+        p {
+            font-size: 0.9375rem;
+            color: $dark;
+            opacity: 0.6;
+        }
     }
 }
 
 section#home-003 {
 
     h2 {
-        font-size: 36px;
+        font-size: 2.25rem;
         font-weight: 800;
         color: $dark;
     }
 
     p {
-        font-size: 15px;
+        font-size: 0.9375rem;
         color: $dark;
         opacity: .6;
     }
@@ -136,8 +159,8 @@ section#home-003 {
         position: absolute;
         top: -2rem;
         left: 0;
-        width: 575px;
-        height: 590px;
+        width: 35.94rem;
+        height: 36.88rem;
         background-image: url('../img/bg.png');
         background-position: center;
         background-size: contain;
@@ -145,6 +168,9 @@ section#home-003 {
 
         @media screen and (max-width: 1199px) {
             width: 100%;
+            height: 100%;
+            top: 4rem;
+            left: 4rem;
         }
     }
 
@@ -152,8 +178,8 @@ section#home-003 {
         position: absolute;
         top: -2rem;
         left: -5rem;
-        width: 685px;
-        height: 554px;
+        width: 42.81rem;
+        height: 34.63rem;
         background-image: url('../img/bg2.png');
         background-position: center;
         background-size: contain;
@@ -161,16 +187,19 @@ section#home-003 {
 
         @media screen and (max-width: 1199px) {
             width: 100%;
+            height: 100%;
+            top: 4rem;
+            left: 4rem;
         }
     }
 
     .image-placeholder {
-        height: 396px;
+        height: 24.75rem;
         width: 100%;
         background-color: #4194fc;
 
         @media screen and (max-width: 575px) {
-            height: 200px;
+            height: 12.5rem;
         }
     }
 }
@@ -178,16 +207,20 @@ section#home-003 {
 a.border-button {
     cursor: pointer;
     text-decoration: none;
-    border-radius: 5px;
-    padding: 15px 30px;
-    border: solid 2px rgba(42, 45, 47, .1);
+    border-radius: 0.3125rem;
+    padding: 0.9375rem 1.875rem;
+    border: solid 0.125rem rgba(42, 45, 47, .1);
 
     @media screen and (max-width: 991px) {
-        padding: 10px 20px;
+        padding: 0.625rem 1.25rem;
     }
 
     @media screen and (max-width: 767px) {
-        padding: 5px 10px;
+        padding: 0.3125rem 0.625rem;
+    }
+
+    @media screen and (max-width: 575px) {
+        background-color: $white;
     }
 
     span {
@@ -201,18 +234,17 @@ a.border-button {
 a.filled-button {
     cursor: pointer;
     text-decoration: none;
-    border-radius: 5px;
-    padding: 15px 30px;
+    border-radius: 0.3125rem;
+    padding: 0.9375rem 1.875rem;
     background-image: linear-gradient(to right, #4194fc, #0bded3);
-    color: $white !important;
     font-weight: bold;
 
     @media screen and (max-width: 991px) {
-        padding: 10px 20px;
+        padding: 0.625rem 1.25rem;
     }
 
     @media screen and (max-width: 767px) {
-        padding: 5px 10px;
+        padding: 0.3125rem 0.625rem;
     }
 }
 
@@ -220,10 +252,9 @@ a.cta-button {
     display: inline-block;
     cursor: pointer;
     text-decoration: none;
-    border-radius: 5px;
-    padding: 15px 30px;
+    border-radius: 0.3125rem;
+    padding: 0.9375rem 1.875rem;
     background-color: $white;
-    color: $blueSecondary !important;
     font-weight: bold;
 }
 
@@ -231,30 +262,16 @@ a.cta-button {
     margin-top: 6rem;
 }
 
-.feature {
-    h4 {
-        font-size: 18px;
-        font-weight: bold;
-        color: $dark;
-    }
-
-    p {
-        font-size: 15px !important;
-        color: $dark;
-        opacity: 0.6;
-    }
-}
-
 .feature-image-container {
-    width: 160px;
-    height: 160px;
+    width: 10rem;
+    height: 10rem;
     background-color: rgba(65, 149, 252, .05);
     border-radius: 50%;
     position: relative;
 
     .feature-image {
-        width: 80px;
-        height: 80px;
+        width: 5rem;
+        height: 5rem;
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
