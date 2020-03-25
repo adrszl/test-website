@@ -29,6 +29,12 @@ header {
         background-position: 30% 100%;
     }
 
+    @media screen and (min-width: 1945px) {
+        background-position: 10% 100%;
+        background-size: 110%;
+        background-repeat: no-repeat;
+    }
+
     nav {
 
         .logo {
@@ -51,6 +57,10 @@ header {
                 cursor: pointer;
                 font-size: 0.9375rem;
                 color: $dark;
+
+                @media screen and (min-width: 2350px) {
+                    color: $white;
+                }
             }
         }
     }
@@ -108,6 +118,15 @@ section#home-002 {
         position: absolute;
         z-index: -1;
         background-position: 5% 50%; 
+
+        @media screen and (min-width: 2350px) {
+            top: -65rem;
+        }
+
+        @media screen and (min-width: 2200px) {
+            background-size: 120%;
+            top: -60rem;
+        }
 
         @media screen and (max-width: 575px) {
             top: 3rem;
@@ -172,6 +191,10 @@ section#home-003 {
             top: 4rem;
             left: 4rem;
         }
+
+        @media screen and (max-width: 991px) {
+            left: 0;
+        }        
     }
 
     .image-placeholder-container-second {
@@ -191,6 +214,10 @@ section#home-003 {
             top: 4rem;
             left: 4rem;
         }
+
+        @media screen and (max-width: 991px) {
+            left: 0;
+        } 
     }
 
     .image-placeholder {
@@ -210,6 +237,10 @@ a.border-button {
     border-radius: 0.3125rem;
     padding: 0.9375rem 1.875rem;
     border: solid 0.125rem rgba(42, 45, 47, .1);
+
+    @media screen and (min-width: 2100px) {
+        background-color: $white;
+    }
 
     @media screen and (max-width: 991px) {
         padding: 0.625rem 1.25rem;

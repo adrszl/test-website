@@ -17,6 +17,11 @@ header {
   @media screen and (max-width: 575px) {
     header {
       background-position: 30% 100%; } }
+  @media screen and (min-width: 1945px) {
+    header {
+      background-position: 10% 100%;
+      background-size: 110%;
+      background-repeat: no-repeat; } }
   header nav .logo {
     text-decoration: none;
     line-height: 2.5rem; }
@@ -32,6 +37,9 @@ header {
       cursor: pointer;
       font-size: 0.9375rem;
       color: #07222f; }
+      @media screen and (min-width: 2350px) {
+        header nav ul li {
+          color: #fff; } }
 
 section#home-001 {
   margin-top: 11rem;
@@ -73,6 +81,13 @@ section#home-002 {
     position: absolute;
     z-index: -1;
     background-position: 5% 50%; }
+    @media screen and (min-width: 2350px) {
+      section#home-002:after {
+        top: -65rem; } }
+    @media screen and (min-width: 2200px) {
+      section#home-002:after {
+        background-size: 120%;
+        top: -60rem; } }
     @media screen and (max-width: 575px) {
       section#home-002:after {
         top: 3rem; } }
@@ -119,6 +134,9 @@ section#home-003 .image-placeholder-container-first {
       height: 100%;
       top: 4rem;
       left: 4rem; } }
+  @media screen and (max-width: 991px) {
+    section#home-003 .image-placeholder-container-first {
+      left: 0; } }
 
 section#home-003 .image-placeholder-container-second {
   position: absolute;
@@ -136,6 +154,9 @@ section#home-003 .image-placeholder-container-second {
       height: 100%;
       top: 4rem;
       left: 4rem; } }
+  @media screen and (max-width: 991px) {
+    section#home-003 .image-placeholder-container-second {
+      left: 0; } }
 
 section#home-003 .image-placeholder {
   height: 24.75rem;
@@ -151,6 +172,9 @@ a.border-button {
   border-radius: 0.3125rem;
   padding: 0.9375rem 1.875rem;
   border: solid 0.125rem rgba(42, 45, 47, 0.1); }
+  @media screen and (min-width: 2100px) {
+    a.border-button {
+      background-color: #fff; } }
   @media screen and (max-width: 991px) {
     a.border-button {
       padding: 0.625rem 1.25rem; } }
@@ -209,17 +233,17 @@ a.cta-button {
     left: 25%; }
     .feature-image-container .feature-image.booking {
       background-image: url("../img/lesson-2.png"); }
-      @media only screen and (min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+      @media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
         .feature-image-container .feature-image.booking {
           background-image: url("../img/lesson-2@2x.png"); } }
     .feature-image-container .feature-image.chatting {
       background-image: url("../img/conversation-2.png"); }
-      @media only screen and (min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+      @media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
         .feature-image-container .feature-image.chatting {
           background-image: url("../img/conversation-2@2x.png"); } }
     .feature-image-container .feature-image.payment {
       background-image: url("../img/payment-2.png"); }
-      @media only screen and (min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+      @media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
         .feature-image-container .feature-image.payment {
           background-image: url("../img/payment-2@2x.png"); } }
 
